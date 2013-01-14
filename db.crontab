@@ -1,0 +1,2 @@
+# Database backup: http://docs.webfaction.com/user-guide/databases.html
+0 2 * * * mysqldump --defaults-file=$HOME/backup/db.cnf -u db_name db_name > $HOME/backup/db_name_`date +\%Y\%m\%d`.sql 2>> $HOME/backup/db_cron.log
