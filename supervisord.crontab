@@ -1,0 +1,2 @@
+# Check supervisord status (script restarts if necessary)
+*/20 * * * * cd /path/to/supervisord; ./supervisord.sh start >> /path/to/supervisord/cron.log 2>&1
